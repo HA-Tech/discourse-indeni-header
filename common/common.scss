@@ -1,0 +1,125 @@
+#indeni-header{
+    float:left;
+#header #nav {
+    width: auto;
+    float: right;
+    position: relative;
+}
+
+#header .toggle {
+    display: block;
+}
+
+#header #nav .wrap {
+    float: left;
+    position: relative;
+}
+
+#header #nav ul.menu {
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    list-style: none;
+}
+
+#header #nav ul.menu li.menu-item-has-children {
+    position: relative;
+}
+
+#header #nav ul.menu li.menu-item-has-children a {
+    padding-right: 18px;
+    margin-right: 12px;
+}
+
+#header #nav ul.menu li {
+    width: auto;
+    height: 80px;
+    float: left;
+}
+
+#header #nav ul.menu li a {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 8px;
+    position: relative;
+}
+
+#header #nav ul.menu li.menu-item-has-children .dropdown_btn {
+    display: none;
+}
+
+#header #nav ul.sub-menu {
+    display: none;
+    width: 320px;
+    position: absolute;
+    left: 0;
+    top: 52px;
+    padding: 20px 0;
+    background: #fff;
+    list-style: none;
+    z-index: 9999;
+    border: 1px solid #45a9dd;
+    text-align: left;
+}
+
+#header #nav ul.menu li {
+    width: auto;
+    height: 80px;
+    float: left;
+}
+
+#header #nav ul.sub-menu li {
+    width: 100%;
+    height: auto;
+}
+
+#header #nav ul.menu li.menu-item-has-children {
+    position: relative;
+}
+
+#header #nav ul.menu li.menu-item-has-children a {
+    padding-right: 18px;
+    margin-right: 12px;
+}
+
+#header #nav ul.menu li.menu-item-has-children:hover>a {
+    color: #45a9dd;
+}
+#header #nav ul.menu li.menu-item-has-children:hover>ul.sub-menu {
+    display: block;
+}
+#header #nav ul.sub-menu li a {
+    display: block;
+    font-size: 15px;
+    color: #45a9dd !important;
+    font-weight: normal;
+    line-height: normal;
+    padding: 5px 25px;
+}
+#header #nav ul.menu li.menu-item-has-children>a:after {
+    content: '';
+    width: 12px;
+    height: 7px;
+    display: block;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f1343;
+    line-height: 14px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -4px;
+    background: url(//indeni.com/wp-content/themes/indeni/images/arrow_down.svg) no-repeat center;
+}
+#header #nav ul.menu li.menu-item-has-children:hover>a:after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+}

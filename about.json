@@ -3,7 +3,6 @@
   "about_url": "http://indeni.com",
   "license_url": "http://indeni.com",
   "assets": {
-  },
-  "color_schemes": {
+    "arrow_down": "assets/arrow_down.svg"
   }
 }
