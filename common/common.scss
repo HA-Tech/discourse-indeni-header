@@ -113,7 +113,7 @@
     top: 50%;
     right: 0;
     margin-top: -4px;
-    background: url(//indeni.com/wp-content/themes/indeni/images/arrow_down.svg) no-repeat center;
+    background: url($arrow_down) no-repeat center;
 }
 #header #nav ul.menu li.menu-item-has-children:hover>a:after {
     -webkit-transform: rotate(-180deg);
