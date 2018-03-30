@@ -99,7 +99,7 @@
     line-height: normal;
     padding: 5px 25px;
 }
-#header #nav ul.menu li.menu-item-has-children>a:after {
+#header #nav.toggle ul.menu li.menu-item-has-children>a:after {
     content: '';
     width: 12px;
     height: 7px;
@@ -113,13 +113,167 @@
     top: 50%;
     right: 0;
     margin-top: -4px;
-    background: url($arrow_down) no-repeat center;
+    background: url(//indeni.com/wp-content/themes/indeni/images/arrow_down.svg) no-repeat center;
 }
-#header #nav ul.menu li.menu-item-has-children:hover>a:after {
+#header #nav.toggle ul.menu li.menu-item-has-children:hover>a:after {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
+}
+#nav_btn {
+    display: none;
+}
+#header #nav ul.sub-menu ul.sub-menu {
+    left: 80%;
+    top: 0;
+}
+@media only screen and (max-width: 920px) {
+#nav_btn {
+    display: block;
+    padding: 18px 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    top: -10px;
+}
+#header .toggle {
+    display: none;
+}
+#nav_btn span, #nav_btn span:before, #nav_btn span:after {
+    width: 28px;
+    height: 4px;
+    float: left;
+    display: block;
+    background: #45a9dd;
+    position: relative;
+    text-indent: -9000px;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+#nav_btn span:before, #nav_btn span:after {
+    content: '';
+    position: absolute;
+}
+#nav_btn span:before {
+    top: -8px;
+}
+
+#nav_btn span:after {
+    bottom: -8px;
+}
+#nav_btn.active span {
+    background-color: transparent;
+}
+#nav_btn.active span:before, #nav_btn.active span:after {
+    top: 0;
+}
+#nav_btn.active span:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#nav_btn.active span:after {
+    transform: translateY(-10px) rotate(-45deg);
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    top: 10px;
+}
+
+#header #nav {
+    width: 100%;
+    float: left;
+    padding: 0;
+    background: #1a3159;
+    margin-top: 43px;
+}
+#header #nav .wrap {
+    width: 100%;
+    padding: 0px;
+}
+#header #nav ul.menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+#header #nav ul.menu li {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #2e4969;
+    position: relative;
+    overflow: hidden;
+}
+#header #nav ul.menu li.menu-item-has-children a {
+    padding-right: 20px;
+    margin-right: 0;
+}
+#header #nav ul.menu li a {
+    font-size: 18px;
+    line-height: normal;
+    padding: 18px 20px;
+}
+#header #nav ul.menu li.menu-item-has-children .dropdown_btn {
+    width: 58px;
+    height: 58px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #2e4969;
+    background: url($arrow_down) no-repeat center;
+    -webkit-background-size: 16px 10px;
+    -moz-background-size: 16px 10px;
+    -o-background-size: 16px 10px;
+    background-size: 16px 10px;
+    text-indent: -9000px;
+    z-index: 9999;
+    cursor: pointer;
+}
+#header #nav ul.menu li.menu-item-has-children:hover>ul.sub-menu {
+    display: none;
+}
+#header #nav ul.sub-menu {
+    display: none;
+    width: 100%;
+    position: relative;
+    left: inherit;
+    top: inherit;
+    padding: 0;
+    background: none;
+    border: 0;
+    margin:0;
+}
+#header #nav ul.sub-menu li a {
+    font-size: 16px;
+    padding: 12px 20px;
+}
+#header #nav ul.sub-menu ul.sub-menu {
+    display: block !important;
+    left: inherit;
+    top: inherit;
+}
+#header #nav ul.sub-menu ul.sub-menu {
+    display: block !important;
+    left: inherit;
+    top: inherit;
+}
+#header #nav ul.sub-menu li ul.sub-menu a {
+    font-size: 14px;
+}
+
+
+}
+
+}
+@media only screen and (max-width: 920px) {
+#indeni-header{
+    width: 100%;
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    overflow-y: scroll;
+    height:100%;
 }
 }
