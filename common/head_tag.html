@@ -10,6 +10,7 @@ api.decorateWidget('header-icons:before', helper => {
     $(function(){
        $('#nav_btn').click(function(e){
            $('#nav_btn').toggleClass('active');
+           $('#indeni-header').toggleClass('open');
            $('#nav').toggleClass('toggle');
        })
        $('.dropdown_btn').bind('click', function(e) {
