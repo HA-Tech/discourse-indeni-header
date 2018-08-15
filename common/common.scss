@@ -105,22 +105,22 @@
 #header #nav ul.sub-menu li:hover>a {
     color: #1a3159 !important;
 }
-#header #nav.toggle ul.menu li.menu-item-has-children>a:after {
-    content: '';
-    width: 12px;
-    height: 7px;
-    display: block;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: #1f1343;
-    line-height: 14px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -4px;
-    background: url(//indeni.com/wp-content/themes/indeni/images/arrow_down.svg) no-repeat center;
-}
+// #header #nav.toggle ul.menu li.menu-item-has-children>a:after {
+//     content: '';
+//     width: 12px;
+//     height: 7px;
+//     display: block;
+//     font-family: 'Open Sans',sans-serif;
+//     font-size: 22px;
+//     font-weight: bold;
+//     color: #1f1343;
+//     line-height: 14px;
+//     position: absolute;
+//     top: 50%;
+//     right: 0;
+//     margin-top: -4px;
+//     background: url(//indeni.com/wp-content/themes/indeni/images/arrow_down.svg) no-repeat center;
+// }
 #header #nav.toggle ul.menu li.menu-item-has-children:hover>a:after {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
